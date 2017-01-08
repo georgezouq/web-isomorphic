@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title><%= title %></title>
+        <% if (!dev) { %>
+        <link rel="stylesheet" href="/build/all.min.css" />
+        <%}%>
+    </head>
+    <body>
+        <div><%- app %></div>
+    </body>
+    <script>
+        try {
+            window.__REDUX_STATE = <%- JSON.stringify(reduxData) -%>;
+        } catch (e){
+            console.log。warn('error in getting server redux data')
+        }
+    </script>
+    <script src="/build/common.js"></script>
+    <script src="/build/main.js"></script>
+</html>
