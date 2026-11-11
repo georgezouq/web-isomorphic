@@ -32,7 +32,6 @@
     "sqlite3": "^3.1.4"
   },
   "devDependencies": {},
-  "author": "George Zou",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/georgezouq/web-isomorphic/issues"
